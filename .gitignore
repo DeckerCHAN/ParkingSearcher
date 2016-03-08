@@ -1,3 +1,4 @@
+#Gradle
 .gradle
 build/
 
@@ -9,3 +10,5 @@ gradle-app.setting
 
 # Cache of project
 .gradletasknamecache
+#IntelliJ
+.idea
