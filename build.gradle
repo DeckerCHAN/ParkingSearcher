@@ -1,0 +1,26 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+group 'com.decker'
+version '1.0-SNAPSHOT'
+
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'org.apache.commons:commons-lang3:3.4'
+    compile 'org.jsoup:jsoup:1.8.3'
+}
+
+jar {
+    baseName = 'ParkingSearcher'
+    manifest {
+        attributes 'Main-Class': 'com.decker.parkingSearch.EntryPoint'
+    }
+}
